@@ -1,0 +1,10 @@
+@import "colors";
+
+@mixin text($size: 14px, $color: $primary-text-color, $weight: 700) {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
