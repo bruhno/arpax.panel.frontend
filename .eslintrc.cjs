@@ -66,6 +66,7 @@ const rules = {
     allowEmptyLines: true,
     ignores: ['pre', 'textarea', ...INLINE_ELEMENTS],
   }],
+  'import/prefer-default-export': 'off'
 };
 
 module.exports = {
