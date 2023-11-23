@@ -1,23 +1,22 @@
 import { defaultHost, type RequestConfigType } from '@/api/Host';
-import * as process from 'process';
 
 interface RequestType extends RequestConfigType {}
-interface ResponseType {
+type ResponseType = Array<{
   passenger: string
   flightNum: string
   destination: string
   scheduleTime: string
-  estimateTime: string
-}
+  estimateTime?: string
+}>;
 
 export default defaultHost.createRequest<RequestType, ResponseType>(
   'get',
   '/invite-to-inspection-area',
   {
-    isMock: process.env.IS_MOCK ?? false,
+    isMock: import.meta.env.VITE_IS_MOCK ?? false,
 
     getMockData(): Promise<ResponseType> {
-      return import(`${process.env.MOCK_PATH}/block-3.json`);
+      return import('../_mock/block-3.json').then(({ default: data }) => data);
     },
   },
 );
