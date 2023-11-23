@@ -1,39 +1,32 @@
-# aeroport-koltsovo
+# Табло - Аэропорт Кольцово
 
-This template should help get you started developing with Vue 3 in Vite.
+Стек
+---
+- Vue 3 - [Документация](https://vuejs.org/guide/introduction.html)
+- Vue Router - [Документация](https://router.vuejs.org/guide/)
+- Vuetify - [Документация](https://vuetifyjs.com/en/introduction/why-vuetify/#what-is-vuetify3f)
+#### Dev
+- Vite - [Документация](https://vitejs.dev/guide/)
+- ESLint - [Документация](https://eslint.org/docs/latest/)
 
-## Recommended IDE Setup
+Так же: scss, css-modules
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+---
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## Действия перед запуском
 
 ```sh
+nvm use #либо установите версию nodejs из .nvmrc
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Запуск в режиме разработки
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+### Сборка
 
 ```sh
 npm run build
@@ -44,3 +37,16 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## Pre-commit хуки
+- проверка eslint
+- проверка commitlint по правилам [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), [commitlint config](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)
+
+---
+Просьба указывать ref задачи в коммите:
+```text
+feat: feature 
+
+ref: #task_number
+```
+
