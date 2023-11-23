@@ -10,6 +10,7 @@
   ],
   "compilerOptions": {
     "composite": true,
+    "verbatimModuleSyntax": false,
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "types": ["node"]
