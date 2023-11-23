@@ -1,6 +1,6 @@
 {
-  "name": "aeroport-koltsovo",
-  "version": "0.0.0",
+  "name": "aeroport-koltsovo-scoreboard",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "vite",

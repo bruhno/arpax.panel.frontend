@@ -1,0 +1,11 @@
+version: "3"
+services:
+  scoreboard:
+    restart: always
+    build:
+      context: ../
+      dockerfile: ./ci/Dockerfile
+    working_dir: /srv/app
+    stdin_open: true
+    ports:
+      - '8320:${DOCKER_PORT}'
