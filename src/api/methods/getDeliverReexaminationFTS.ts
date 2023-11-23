@@ -1,15 +1,8 @@
 import { defaultHost, type RequestConfigType } from '@/api/Host';
+import type { DeliverReexaminationFTSItem } from '@/domain/types';
 
 interface RequestType extends RequestConfigType {}
-type ResponseType = Array<{
-  passenger: string
-  baggageNum: string
-  flightNum: string
-  destination: string
-  scheduleTime: string
-  inspection: string
-  estimateTime?: string
-}>;
+type ResponseType = Array<DeliverReexaminationFTSItem>;
 
 export default defaultHost.createRequest<RequestType, ResponseType>(
   'get',

@@ -1,13 +1,8 @@
 import { defaultHost, type RequestConfigType } from '@/api/Host';
+import type { InviteToInspectionAreaItem } from '@/domain/types';
 
 interface RequestType extends RequestConfigType {}
-type ResponseType = Array<{
-  passenger: string
-  flightNum: string
-  destination: string
-  scheduleTime: string
-  estimateTime?: string
-}>;
+type ResponseType = Array<InviteToInspectionAreaItem>;
 
 export default defaultHost.createRequest<RequestType, ResponseType>(
   'get',
