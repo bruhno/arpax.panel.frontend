@@ -17,6 +17,8 @@
 
 ```sh
 nvm use #либо установите версию nodejs из .nvmrc
+
+npm run prepare
 npm install
 ```
 
