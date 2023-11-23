@@ -42,7 +42,8 @@ const INLINE_ELEMENTS = [
 ];
 
 const rules = {
-  'import/extensions': 0,
+  'import/extensions': 'off',
+  'import/prefer-default-export': 'off',
   'vue/max-attributes-per-line': [2,
     {
       singleline: {
@@ -66,7 +67,17 @@ const rules = {
     allowEmptyLines: true,
     ignores: ['pre', 'textarea', ...INLINE_ELEMENTS],
   }],
-  'import/prefer-default-export': 'off'
+  "import-newlines/enforce": [
+    "error",
+    {
+      "items": 2,
+      "max-len": 100,
+      "semi": false
+    }
+  ],
+  'no-underscore-dangle': [2, {
+    allowAfterThis: true
+  }]
 };
 
 module.exports = {
@@ -76,6 +87,9 @@ module.exports = {
     'eslint:recommended',
     '@vue/eslint-config-prettier/skip-formatting',
     '@vue/eslint-config-airbnb-with-typescript',
+  ],
+  plugins: [
+    "import-newlines"
   ],
   parserOptions: {
     ecmaVersion: 'latest',
