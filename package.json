@@ -23,12 +23,12 @@
     ]
   },
   "dependencies": {
-    "sass": "^1.69.5",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5",
     "vuetify": "^3.4.3"
   },
   "devDependencies": {
+    "sass": "^1.69.5",
     "@commitlint/config-conventional": "^18.4.3",
     "commitlint": "^18.4.3",
     "lint-staged": "^15.1.0",
