@@ -1,47 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { PageHeader } from '@/components/PageHeader';
+import { ScoreboardConfigurationList } from './ScoreboardConfigurationList';
+</script>
 
 <template>
   <div>
-    <nav>
-      <v-list
-        :lines="false"
-        density="compact"
-      >
-        <v-list-item
-          value="/submit-re-examination"
-          href="/submit-re-examination"
-          color="primary"
-          :link="true"
-        >
-          Табло №1
-        </v-list-item>
-        <v-list-item
-          value="/return-reexamination"
-          href="/return-reexamination"
-          color="primary"
-          :link="true"
-        >
-          Табло №2
-        </v-list-item>
-        <v-list-item
-          value="/invite-to-inspection-area"
-          href="/invite-to-inspection-area"
-          color="primary"
-          :link="true"
-        >
-          Табло №3
-        </v-list-item>
-        <v-list-item
-          value="/deliver-re-examination-fts"
-          href="/deliver-re-examination-fts"
-          color="primary"
-          :link="true"
-        >
-          Табло №4
-        </v-list-item>
-      </v-list>
-    </nav>
+    <PageHeader title="Табло информирования" />
+
+    <ScoreboardConfigurationList />
   </div>
 </template>
 
-<style module lang="scss"></style>
+<style module lang="scss">
+@import '@/assets/styles/styleKit';
+</style>

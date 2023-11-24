@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import SubmitReexaminationTable from '@/components/Scoreboard/SubmitReexamination/SubmitReexaminationTable.vue';
-import Header from '@/components/Header/index.vue';
+import { PageHeader } from '@/components/PageHeader';
 </script>
 
 <template>
   <div class="greetings">
-    <Header
+    <PageHeader
       title="Доставить на повторный досмотр"
       bg-color="orange"
+      with-clock
     />
     <SubmitReexaminationTable />
   </div>

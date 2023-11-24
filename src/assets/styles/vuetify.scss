@@ -1,4 +1,28 @@
+@use "styleKit";
+
 @use 'vuetify/settings' with (
-  $color-pack: false,
-  $utilities: false,
+  $body-font-family: "'Inter', sans-serif",
+  $color-pack: true,
+  $border-radius-root: 8px,
+
+  // list
+  $list-padding: 0,
+  $list-background: transparent,
+
+  // list-item
+  $list-item-title-font-size: 24px,
+  $list-item-title-font-weight: 800,
+  $list-item-subtitle-font-size: 16px,
+  $list-item-subtitle-font-weight: 500,
+  $list-item-subtitle-padding: 16px 0 0 0,
+  $list-item-subtitle-opacity: 1,
+
+
+  // btn
+  $button-background: styleKit.$control-accent-color,
+  $button-height: 48px,
+
+  // select
+  $select-line-height: 20px
 );
+

@@ -2,6 +2,7 @@
 
 body {
   background: $background-base;
+  @include text();
 }
 .v-table {
   .v-table__wrapper > table {
