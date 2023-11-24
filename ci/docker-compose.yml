@@ -8,4 +8,4 @@ services:
     working_dir: /srv/app
     stdin_open: true
     ports:
-      - '8320:${DOCKER_PORT}'
+      - '${DOCKER_PORT}:80'
