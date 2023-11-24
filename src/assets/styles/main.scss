@@ -3,3 +3,23 @@
 body {
   background: $background-base;
 }
+.v-table {
+  .v-table__wrapper > table {
+    tbody {
+      tr:not(:last-child) {
+        td, th {
+          border-bottom: 2px solid $background-base !important;
+        }
+      }
+      tr {
+        background-color: $background-info;
+      }
+    }
+    thead > tr {
+        background-color: $background-header;
+        td, th {
+          border-bottom: 2px solid $background-base !important;
+        }
+    }
+  }
+}

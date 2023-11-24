@@ -1,4 +1,8 @@
 import 'vuetify/styles';
 import { createVuetify } from 'vuetify';
 
-export default createVuetify();
+export default createVuetify({
+  theme: {
+    defaultTheme: 'dark',
+  },
+});
