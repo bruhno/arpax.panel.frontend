@@ -1,10 +1,12 @@
 <template>
   <div :class="$style.clock">
-    <i
-      class="material-icons"
+    <v-icon
       :class="$style.clock__icon"
-    > schedule </i>
-    <span :class="$style.clock__time"> {{ time }} / {{ date }} </span>
+      icon="mdi-clock-outline"
+      size="24"
+    />
+
+    <span> {{ time }} / {{ date }} </span>
   </div>
 </template>
 
@@ -39,16 +41,18 @@ export default {
 </script>
 
 <style module lang="scss">
+@import '@/assets/styles/styleKit';
 .clock {
   display: grid;
   grid-template-columns: min-content auto;
   grid-template-rows: min-content;
   grid-column-gap: 10px;
-  grid-row-gap: 0px;
+  grid-row-gap: 0;
   width: max-content;
   padding: 10px 20px;
-  font-size: 2.5vw;
-  font-weight: 500;
+
+  @include text($weight: 500, $size: 24px);
+
   &__icon {
     font-size: 2.5vw;
     align-self: center;

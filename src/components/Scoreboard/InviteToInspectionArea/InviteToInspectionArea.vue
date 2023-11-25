@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import InviteToInspectionAreaTable from '@/components/Scoreboard/InviteToInspectionArea/InviteToInspectionAreaTable.vue';
-import Header from '@/components/Header/index.vue';
+import { PageHeader } from '@/components/PageHeader';
 </script>
 
 <template>
   <div class="greetings">
-    <Header title="Приглашаем пройти в зону досмотра пассажиров" />
+    <PageHeader
+      title="Приглашаем пройти в зону досмотра пассажиров"
+      with-clock
+    />
     <InviteToInspectionAreaTable />
   </div>
 </template>

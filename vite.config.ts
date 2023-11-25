@@ -19,4 +19,11 @@ export default defineConfig({
   define: {
     'process.env': JSON.stringify(process.env),
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/assets/styles/styleKit";',
+      },
+    },
+  },
 });

@@ -7,12 +7,12 @@
     ]"
   >
     <span :class="$style.header__title">{{ title }}</span>
-    <Clock />
+    <Clock v-if="withClock" />
   </div>
 </template>
 
 <script lang="ts">
-import Clock from '@/components/Header/Clock.vue';
+import Clock from '@/components/PageHeader/Clock.vue';
 
 export default {
   name: 'PageHeader',
@@ -31,26 +31,29 @@ export default {
       type: String,
       default: 'default',
     },
+    withClock: {
+      type: Boolean,
+      default: false,
+    },
   },
 };
 </script>
 
 <style module lang="scss">
 @import '@/assets/styles/styleKit.scss';
+
 .header {
   display: grid;
   grid-template-columns: 2fr auto;
   grid-template-rows: repeat(1, min-content);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
   padding: 20px 40px;
-  font-family: 'Inter';
   background-color: $background-base;
-  color: $primary-text-color;
+
   &__title {
+    @include text($size: 24px, $weight: 800);
     align-self: center;
-    font-size: 2.5vw;
-    font-weight: 800;
   }
 }
 .red {
