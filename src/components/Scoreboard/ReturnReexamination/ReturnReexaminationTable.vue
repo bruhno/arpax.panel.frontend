@@ -56,6 +56,7 @@ const headers = [
   <table-component
     time-column-key="scheduleTime"
     header-background-color="redHeader"
+    :yellow-columns="['flightNum', 'scheduleTime', 'inspection']"
     :headers="headers"
     :items="tableData"
   />
