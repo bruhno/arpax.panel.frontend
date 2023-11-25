@@ -1,3 +1,8 @@
+import appConfig from '@/configs/appConfig';
 import ApiHost from './ApiHost';
 
-export default new ApiHost(import.meta.env.VITE_API_URL ?? '');
+export default new ApiHost(appConfig.apiUrl, {
+  headers: {
+    'X-API-KEY': appConfig.apiKey,
+  },
+});
