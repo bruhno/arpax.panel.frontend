@@ -1,6 +1,46 @@
 <script setup lang="ts">
-import DeliverReexaminationFTSTable from '@/components/Scoreboard/DeliverReexaminationFTS/DeliverReexaminationFTSTable.vue';
+import {
+  onMounted,
+  onUnmounted,
+  ref,
+} from 'vue';
+import { TableComponent } from '@/components/TableComponent';
 import { PageHeader } from '@/components/PageHeader';
+import { getDeliverReexaminationFTS } from '@/api';
+import type { DeliverReexaminationFTSItem } from '@/domain/types';
+
+const tableData = ref<DeliverReexaminationFTSItem[]>([]);
+const fetchData = async () => {
+  try {
+    const response = await getDeliverReexaminationFTS({});
+    if (response !== undefined) {
+      tableData.value = response;
+    } else {
+      tableData.value = [];
+    }
+  } catch {
+    tableData.value = [];
+  }
+};
+
+let intervalId: number;
+
+onMounted(() => {
+  fetchData();
+  intervalId = setInterval(fetchData, 1000) as unknown as number;
+});
+
+onUnmounted(() => {
+  clearInterval(intervalId);
+});
+
+const headers = [
+  { title: 'Фамилия', key: 'passenger' },
+  { title: '№ б/б', key: 'baggageNum' },
+  { title: 'Рейс', key: 'flightNum' },
+  { title: 'Вылет', key: 'scheduleTime' },
+  { title: 'Досмотр', key: 'inspection' },
+];
 </script>
 
 <template>
@@ -9,7 +49,12 @@ import { PageHeader } from '@/components/PageHeader';
       title="Доставить на повторный досмотр ФТС"
       with-clock
     />
-    <DeliverReexaminationFTSTable />
+    <table-component
+      :items="tableData"
+      :headers="headers"
+      :yellow-columns="['flightNum', 'scheduleTime', 'inspection']"
+      time-column-key="scheduleTime"
+    />
   </div>
 </template>
 
