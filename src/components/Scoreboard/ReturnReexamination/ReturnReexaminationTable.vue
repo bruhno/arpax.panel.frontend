@@ -1,9 +1,64 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useRoute } from 'vue-router';
+import TableComponent from '@/components/TableComponent/TableComponent.vue';
+import {
+  onMounted,
+  onUnmounted,
+  ref,
+} from 'vue';
+
+import { getReturnReexamination } from '@/api';
+import type { ReturnReexaminationItem } from '@/domain/types';
+
+const route = useRoute();
+const { belt } = route.query;
+
+const tableData = ref<ReturnReexaminationItem[]>([]);
+
+const fetchData = async () => {
+  try {
+    const response = await getReturnReexamination({
+      query: {
+        belt: +(belt ?? 1),
+      },
+    });
+    if (response !== undefined) {
+      tableData.value = response;
+    } else {
+      tableData.value = [];
+    }
+  } catch {
+    tableData.value = [];
+  }
+};
+
+let intervalId: number;
+
+onMounted(() => {
+  fetchData();
+  intervalId = setInterval(fetchData, 1000) as unknown as number;
+});
+
+onUnmounted(() => {
+  clearInterval(intervalId);
+});
+
+const headers = [
+  { title: 'Фамилия', key: 'passenger' },
+  { title: '№ б/б', key: 'baggageNum' },
+  { title: 'Рейс', key: 'flightNum' },
+  { title: 'Вылет', key: 'scheduleTime' },
+  { title: 'Досмотр', key: 'inspection' },
+];
+</script>
 
 <template>
-  <div class="greetings">
-    Таблица - Вернуть с повторного досмотра
-  </div>
+  <table-component
+    time-column-key="scheduleTime"
+    header-background-color="redHeader"
+    :headers="headers"
+    :items="tableData"
+  />
 </template>
 
 <style module lang="scss"></style>
