@@ -2,7 +2,7 @@
   <div :class="$style.clock">
     <v-icon
       :class="$style.clock__icon"
-      icon="mdi-clock-outline"
+      icon="$clockOutline"
       size="24"
     />
 
@@ -32,7 +32,7 @@ export default {
   created() {
     this.intervalId = setInterval(() => {
       this.intervalDate = new Date();
-    }, 1000);
+    }, 1000) as unknown as number;
   },
   unmounted() {
     clearInterval(this.intervalId);

@@ -59,6 +59,7 @@ const computedHeaders = computed(() => props.headers.map((header) => ({
         :removed="item.removed"
         :yellow-columns="yellowColumns"
         :time-column-key="timeColumnKey"
+        :estimate-time="item.estimateTime"
       />
     </template>
     <template #bottom />

@@ -1,7 +1,4 @@
 import '@/assets/styles/main.scss';
-// типов нет
-// eslint-disable-next-line import/no-extraneous-dependencies
-import '@mdi/font/css/materialdesignicons.css';
 import 'vuetify/styles';
 
 import { createApp } from 'vue';
