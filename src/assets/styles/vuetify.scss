@@ -10,8 +10,6 @@
   $list-background: transparent,
 
   // list-item
-  $list-item-title-font-size: 24px,
-  $list-item-title-font-weight: 800,
   $list-item-subtitle-font-size: 16px,
   $list-item-subtitle-font-weight: 500,
   $list-item-subtitle-padding: 16px 0 0 0,
@@ -26,3 +24,6 @@
   $select-line-height: 20px
 );
 
+.v-list .v-list-item--link:before{
+  background-color: #fff !important;
+}

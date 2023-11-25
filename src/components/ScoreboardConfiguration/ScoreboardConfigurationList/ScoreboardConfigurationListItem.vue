@@ -47,14 +47,24 @@ const openScoreboard = () => {
           variant="outlined"
           hide-details
           density="comfortable"
-        />
+        >
+          <template #item="{ item, props: itemProps }">
+            <v-list-item
+              v-bind="itemProps"
+              :active="item.props.value === selectedBelt"
+              :active-class="$style.listItemActive"
+            >
+              {{ item.props.label }}
+            </v-list-item>
+          </template>
+        </v-select>
 
         <v-btn @click="openScoreboard">
           Запуск
         </v-btn>
       </v-list-item-action>
     </template>
-    <v-list-item-title>
+    <v-list-item-title :class="$style.listItemTitle">
       {{ title }}
     </v-list-item-title>
     <v-list-item-subtitle>
@@ -79,6 +89,15 @@ const openScoreboard = () => {
     display: flex;
     flex-direction: row;
     gap: 54px;
+  }
+
+  &Title {
+    @include text($size: 24px, $weight: 800);
+  }
+
+  &Active {
+    background: $control-accent-color !important;
+    border-radius: 8px !important;
   }
 
   &:not(:last-child) {
