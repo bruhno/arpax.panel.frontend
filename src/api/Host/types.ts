@@ -1,5 +1,9 @@
 type Methods = 'get' | 'post' | 'put' | 'delete';
 
+type CreateHostOptions = Partial<{
+  headers: Record<string, string>
+}>;
+
 interface RequestConfigType {
   query?: {
     [key: string]: string | number | boolean
@@ -13,4 +17,6 @@ interface CreateRequestOptions<CurrentRequestConfigType, ResponseType> {
   isMock?: boolean
 }
 
-export type { Methods, RequestConfigType, CreateRequestOptions };
+export type {
+  Methods, CreateHostOptions, RequestConfigType, CreateRequestOptions,
+};
