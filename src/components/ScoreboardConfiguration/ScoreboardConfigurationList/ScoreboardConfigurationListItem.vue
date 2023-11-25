@@ -64,8 +64,10 @@ const openScoreboard = () => {
         </v-btn>
       </v-list-item-action>
     </template>
-    <v-list-item-title :class="$style.listItemTitle">
-      {{ title }}
+    <v-list-item-title>
+      <span :class="$style.listItemTitle">
+        {{ title }}
+      </span>
     </v-list-item-title>
     <v-list-item-subtitle>
       <template
