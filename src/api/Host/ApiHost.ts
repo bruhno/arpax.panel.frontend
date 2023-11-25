@@ -1,5 +1,6 @@
 import axios, { type AxiosInstance } from 'axios';
 import {
+  type CreateHostOptions,
   type CreateRequestOptions,
   type Methods,
   type RequestConfigType,
@@ -10,9 +11,10 @@ import { createUrl } from 'url-fns';
 class ApiHost {
   private _axios: AxiosInstance;
 
-  constructor(baseURL: string) {
+  constructor(baseURL: string, options: CreateHostOptions = {}) {
     this._axios = axios.create({
       baseURL,
+      ...options,
     });
   }
 
