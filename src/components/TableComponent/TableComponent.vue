@@ -27,16 +27,8 @@ const props = defineProps({
   },
 });
 
-function makeHeaderReadable(key: string): string {
-  return key
-    .replace(/([A-Z])/g, ' $1')
-    .replace(/^./, (str) => str.toUpperCase())
-    .replace(/Num/g, ' Номер')
-    .replace(/Time/g, ' Время');
-}
-
 const computedHeaders = computed(() => props.headers.map((header) => ({
-  text: makeHeaderReadable(header.title),
+  text: header.title,
   value: header.key,
 })));
 </script>
