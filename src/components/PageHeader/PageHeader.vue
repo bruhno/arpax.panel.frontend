@@ -46,13 +46,21 @@ defineProps({
     @include text($size: 24px, $weight: 800);
     align-self: center;
   }
-}
-.red {
-  background-color: $background-header-red;
-  color: $primary-text-color;
-}
-.orange {
-  background-color: $background-header-orange;
-  color: $background-base;
+
+  &.red {
+    background-color: $background-header-red;
+    i,
+    span {
+      color: $primary-text-color;
+    }
+  }
+
+  &.orange {
+    background-color: $background-header-orange;
+    i,
+    span {
+      color: $background-base;
+    }
+  }
 }
 </style>
