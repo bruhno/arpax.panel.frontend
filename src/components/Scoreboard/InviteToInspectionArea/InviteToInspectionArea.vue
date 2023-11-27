@@ -23,11 +23,11 @@ const fetchData = async () => {
   }
 };
 
-let intervalId: number;
+let intervalId: ReturnType<typeof setInterval>;
 
 onMounted(() => {
   fetchData();
-  intervalId = setInterval(fetchData, 1000) as unknown as number;
+  intervalId = setInterval(fetchData, 1000);
 });
 
 onUnmounted(() => {

@@ -7,7 +7,7 @@ import {
   ref,
 } from 'vue';
 
-const interval = ref<number>();
+const interval = ref<ReturnType<typeof setInterval>>();
 const date = ref<Date>(new Date());
 
 const dateString = computed(() => format(date.value, 'kk:mm / dd.MM.yyyy'));
@@ -15,7 +15,7 @@ const dateString = computed(() => format(date.value, 'kk:mm / dd.MM.yyyy'));
 onMounted(() => {
   interval.value = setInterval(() => {
     date.value = new Date();
-  }, 1000) as unknown as number;
+  }, 1000);
 });
 
 onUnmounted(() => {
