@@ -5,7 +5,9 @@ import {
   ref,
 } from 'vue';
 import { TableComponent } from '@/components/TableComponent';
+import { BaggageCell } from '@/components/TableComponent/BagageCell';
 import { PageHeader } from '@/components/PageHeader';
+
 import { getDeliverReexaminationFTS } from '@/api';
 import type { DeliverReexaminationFTSItem } from '@/domain/types';
 
@@ -54,7 +56,11 @@ const headers = [
       :headers="headers"
       :yellow-columns="['flightNum', 'scheduleTime', 'inspection']"
       time-column-key="scheduleTime"
-    />
+    >
+      <template #[`baggageNum`]="scope">
+        <BaggageCell :value="scope.value" />
+      </template>
+    </table-component>
   </div>
 </template>
 
