@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
-import TableComponent from '@/components/TableComponent/TableComponent.vue';
 import {
   onMounted,
   onUnmounted,
   ref,
 } from 'vue';
+import { useRoute } from 'vue-router';
+import TableComponent from '@/components/TableComponent/TableComponent.vue';
+import { BaggageCell } from '@/components/TableComponent/BagageCell';
 
 import { getReturnReexamination } from '@/api';
 import type { ReturnReexaminationItem } from '@/domain/types';
@@ -59,7 +60,11 @@ const headers = [
     :yellow-columns="['flightNum', 'scheduleTime', 'inspection']"
     :headers="headers"
     :items="tableData"
-  />
+  >
+    <template #[`baggageNum`]="scope">
+      <BaggageCell :value="scope.value" />
+    </template>
+  </table-component>
 </template>
 
 <style module lang="scss"></style>

@@ -27,6 +27,15 @@ const props = defineProps({
   },
 });
 
+defineSlots<{
+  [key: string]: (props: {
+    index: number
+    item: any
+    toggleSelect: (item: { value: any; selectable: boolean }) => void
+  } & { value: any }
+  ) => unknown
+}>();
+
 const computedHeaders = computed(() => props.headers.map((header) => ({
   text: header.title,
   value: header.key,
@@ -52,6 +61,16 @@ const computedHeaders = computed(() => props.headers.map((header) => ({
         :yellow-columns="yellowColumns"
         :time-column-key="timeColumnKey"
         :estimate-time="item.estimateTime"
+      />
+    </template>
+
+    <template
+      v-for="(_, name) in $slots"
+      #[`item.${name}`]="slotData"
+    >
+      <slot
+        :name="`${name as string}`"
+        v-bind="slotData"
       />
     </template>
     <template #bottom />
