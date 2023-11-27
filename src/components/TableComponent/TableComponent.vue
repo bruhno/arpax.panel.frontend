@@ -2,8 +2,6 @@
 import { computed } from 'vue';
 import { DataCell } from './DataCell';
 
-// import { TableI} from 'vuetify/lib/components/VDataTable/index.d.mts';
-
 type TableItem = Record<string, any>;
 
 const props = defineProps({
