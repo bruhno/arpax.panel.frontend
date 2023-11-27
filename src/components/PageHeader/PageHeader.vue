@@ -1,3 +1,22 @@
+<script setup lang="ts">
+import HeaderClock from './HeaderClock.vue';
+
+defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  bgColor: {
+    type: String,
+    default: 'default',
+  },
+  withClock: {
+    type: Boolean,
+    default: false,
+  },
+});
+</script>
+
 <template>
   <div
     :class="[
@@ -7,37 +26,9 @@
     ]"
   >
     <span :class="$style.header__title">{{ title }}</span>
-    <Clock v-if="withClock" />
+    <HeaderClock v-if="withClock" />
   </div>
 </template>
-
-<script lang="ts">
-import Clock from '@/components/PageHeader/Clock.vue';
-
-export default {
-  name: 'PageHeader',
-  components: {
-    Clock,
-  },
-  data() {
-    return {};
-  },
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    bgColor: {
-      type: String,
-      default: 'default',
-    },
-    withClock: {
-      type: Boolean,
-      default: false,
-    },
-  },
-};
-</script>
 
 <style module lang="scss">
 @import '@/assets/styles/styleKit.scss';
