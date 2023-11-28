@@ -5,9 +5,10 @@ stages:
 Build:
   stage: build
   script:
+    - echo VITE_API_URL=/api > .env.local
     - docker-compose -f ./ci/docker-compose.yml build --no-cache
   tags:
-    - rnr
+    - tablo
 #  only:
 #    - master
 Run:
@@ -15,6 +16,6 @@ Run:
   script:
     - docker-compose -f ./ci/docker-compose.yml up -d
   tags:
-    - rnr
+    - tablo
 #  only:
 #    - master
