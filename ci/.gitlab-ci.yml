@@ -5,7 +5,7 @@ stages:
 Build:
   stage: build
   script:
-    - docker-compose ./docker-compose.yml build --no-cache
+    - docker-compose ./ci/docker-compose.yml build --no-cache
   tags:
     - rnr
 #  only:
@@ -13,7 +13,7 @@ Build:
 Run:
   stage: run
   script:
-    - docker-compose ./docker-compose.yml up
+    - docker-compose ./ci/docker-compose.yml up
   tags:
     - rnr
 #  only:
