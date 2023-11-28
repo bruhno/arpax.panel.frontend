@@ -5,7 +5,14 @@ services:
     build:
       context: ../
       dockerfile: ./ci/Dockerfile
-    working_dir: /srv/app
+    working_dir: /usr/share/nginx/html
     stdin_open: true
     ports:
       - '${DOCKER_PORT}:80'
+  server:
+    restart: always
+    build:
+      context: ../server
+      dockerfile: ../ci/Server.Dockerfile
+    ports:
+      - '${SRV_PORT}:80'
