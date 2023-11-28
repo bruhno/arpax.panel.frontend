@@ -1,0 +1,16 @@
+stages:
+  - build
+  - run
+
+Build:
+  stage: build
+  script:
+    - docker-compose ./docker-compose.yml build --no-cache
+#  only:
+#    - master
+Run:
+  stage: run
+  script:
+    - docker-compose ./docker-compose.yml up
+#  only:
+#    - master
