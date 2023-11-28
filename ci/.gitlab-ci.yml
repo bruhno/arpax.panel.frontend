@@ -5,12 +5,17 @@ stages:
 Build:
   stage: build
   script:
-    - docker-compose ./docker-compose.yml build --no-cache
-#  only:
-#    - master
+    - echo VITE_API_URL=/api > .env.local
+    - docker-compose -f ./ci/docker-compose.yml build --no-cache
+  tags:
+    - tablo
+  only:
+    - main
 Run:
   stage: run
   script:
-    - docker-compose ./docker-compose.yml up
-#  only:
-#    - master
+    - docker-compose -f ./ci/docker-compose.yml up -d --remove-orphans
+  tags:
+    - tablo
+  only:
+    - main
