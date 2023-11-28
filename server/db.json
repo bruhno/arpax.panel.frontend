@@ -1,0 +1,599 @@
+{
+  "block1": [
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt":1
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "belt": 1
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 4
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "belt": 4
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 1
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "belt": 1
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 3
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "belt": 1
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 1
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "belt": 4
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 2
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "belt": 3
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 1
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "belt": 1
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 3
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "belt": 1
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 5
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "belt": 5
+    }],
+  "block2": [
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 3
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "removed":true,
+      "belt": 2
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 1
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "removed":true,
+      "belt": 4
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 4
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "removed":true,
+      "belt": 1
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 4
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "removed":true,
+      "belt": 1
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 1
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "removed":true,
+      "belt": 3
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 1
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "removed":true,
+      "belt": 5
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 5
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "removed":true,
+      "belt": 1
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ",
+      "belt": 3
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ",
+      "removed":true,
+      "belt": 2
+    }
+  ],
+  "block3": [
+    {
+      "passenger":"Кузнецов Иван",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00"
+    }
+  ],
+  "block4": [
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ"
+    },
+    {
+      "passenger":"Кузнецов Иван",
+      "baggageNum":"043232",
+      "flightNum":"DP-340",
+      "destination":"Sochi",
+      "scheduleTime":"2023-11-16T05:40:00",
+      "inspection":"САБ"
+    },
+    {
+      "passenger":"Петров Тимофей",
+      "baggageNum":"786768",
+      "flightNum":"SU-6402",
+      "destination":"St.Petersburg",
+      "scheduleTime":"2023-11-16T06:15:00",
+      "estimateTime":"2023-11-16T07:10:00",
+      "inspection":"ФТС/САБ"
+    }
+  ]
+}
