@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router';
+import { RouterView, useRoute } from 'vue-router';
+import { watch } from 'vue';
+
+const route = useRoute();
+
+watch(route, ({ meta }) => {
+  document.title = meta.title as string;
+});
 </script>
 
 <template>
