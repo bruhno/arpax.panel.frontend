@@ -9,13 +9,13 @@ Build:
     - docker-compose -f ./ci/docker-compose.yml build --no-cache
   tags:
     - tablo
-  only:
-    - main
+#  only:
+#    - main
 Run:
   stage: run
   script:
     - docker-compose -f ./ci/docker-compose.yml up -d --remove-orphans
   tags:
     - tablo
-  only:
-    - main
+#  only:
+#    - main

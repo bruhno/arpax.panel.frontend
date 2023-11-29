@@ -36,7 +36,7 @@ let intervalId: number;
 
 onMounted(() => {
   fetchData();
-  intervalId = setInterval(fetchData, 1000) as unknown as number;
+  intervalId = setInterval(fetchData, 15000) as unknown as number;
 });
 
 onUnmounted(() => {
