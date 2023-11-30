@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, useCssModule } from 'vue';
+import { format } from 'date-fns';
 
 const props = defineProps({
   columnKey: {
@@ -20,27 +21,44 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  estimateTime: {
+    type: String,
+    default: '',
+    required: false,
+  },
   removed: Boolean,
 });
 
 const $style = useCssModule();
 
-function isTimeOverdue(time: string) {
-  const currentTime = new Date();
+function isTime(time: string, estimateTime: string): boolean {
+  const currentTime = new Date(estimateTime);
   const scheduleTime = new Date(time);
   return currentTime > scheduleTime;
 }
 
 const classObject = computed(() => ({
   [$style.yellow]: props.yellowColumns.includes(props.columnKey),
-  [$style.red]: props.columnKey === props.timeColumnKey && isTimeOverdue(props.value),
+  [$style.red]: props.columnKey === props.timeColumnKey && isTime(props.value, props.estimateTime),
   [$style.lineThrough]: props.removed,
 }));
+
+const formattedValue = computed(() => {
+  if (props.columnKey === props.timeColumnKey) {
+    try {
+      const date = new Date(props.value);
+      return format(date, 'HH:mm');
+    } catch {
+      return props.value;
+    }
+  }
+  return props.value;
+});
 </script>
 
 <template>
   <p :class="classObject">
-    {{ props.value }}
+    {{ formattedValue }}
   </p>
 </template>
 
