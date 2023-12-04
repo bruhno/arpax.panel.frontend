@@ -19,6 +19,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  disabled: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const selectedBelt = ref(belts[0].value);
@@ -47,6 +51,7 @@ const openScoreboard = () => {
           variant="outlined"
           hide-details
           density="comfortable"
+          :disabled="disabled"
         >
           <template #item="{ item, props: itemProps }">
             <v-list-item
@@ -59,7 +64,10 @@ const openScoreboard = () => {
           </template>
         </v-select>
 
-        <v-btn @click="openScoreboard">
+        <v-btn
+          :disabled="disabled"
+          @click="openScoreboard"
+        >
           Запуск
         </v-btn>
       </v-list-item-action>
