@@ -10,6 +10,7 @@ import { PageHeader } from '@/components/PageHeader';
 
 import { getDeliverReexaminationFTS } from '@/api';
 import type { DeliverReexaminationFTSItem } from '@/domain/types';
+import appConfig from '@/configs/appConfig';
 
 const tableData = ref<DeliverReexaminationFTSItem[]>([]);
 const fetchData = async () => {
@@ -29,7 +30,7 @@ let intervalId: ReturnType<typeof setInterval>;
 
 onMounted(() => {
   fetchData();
-  intervalId = setInterval(fetchData, 1000);
+  intervalId = setInterval(fetchData, appConfig.requestInterval);
 });
 
 onUnmounted(() => {

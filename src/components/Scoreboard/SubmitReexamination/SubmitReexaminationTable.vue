@@ -10,6 +10,7 @@ import {
 import { getSubmitReexamination } from '@/api';
 import type { SubmitReexaminationItem } from '@/domain/types';
 import { BaggageCell } from '@/components/TableComponent/BagageCell';
+import appConfig from '@/configs/appConfig';
 
 const route = useRoute();
 const { belt } = route.query;
@@ -37,7 +38,7 @@ let intervalId: ReturnType<typeof setInterval>;
 
 onMounted(() => {
   fetchData();
-  intervalId = setInterval(fetchData, 1000);
+  intervalId = setInterval(fetchData, appConfig.requestInterval);
 });
 
 onUnmounted(() => {

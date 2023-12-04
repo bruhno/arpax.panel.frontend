@@ -8,6 +8,7 @@ import {
 } from 'vue';
 import type { InviteToInspectionAreaItem } from '@/domain/types';
 import { getInviteToInspectionArea } from '@/api';
+import appConfig from '@/configs/appConfig';
 
 const tableData = ref<InviteToInspectionAreaItem[]>([]);
 const fetchData = async () => {
@@ -27,7 +28,7 @@ let intervalId: ReturnType<typeof setInterval>;
 
 onMounted(() => {
   fetchData();
-  intervalId = setInterval(fetchData, 1000);
+  intervalId = setInterval(fetchData, appConfig.requestInterval);
 });
 
 onUnmounted(() => {
