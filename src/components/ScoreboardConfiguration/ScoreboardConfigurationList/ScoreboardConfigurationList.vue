@@ -19,19 +19,16 @@ import ScoreboardConfigurationListItem from './ScoreboardConfigurationListItem.v
         :sub-title="['Досмотренный багаж', 'Необходимо выбрать номер багажной ленты']"
         path="/return-reexamination"
         with-select-belt
-        disabled
       />
       <ScoreboardConfigurationListItem
         title="Табло №3"
         :sub-title="['Приглашение для пассажиров']"
         path="/invite-to-inspection-area"
-        disabled
       />
       <ScoreboardConfigurationListItem
         title="Табло №4"
         :sub-title="['Грязный багаж ФТС']"
         path="/deliver-re-examination-fts"
-        disabled
       />
     </v-list>
   </div>
