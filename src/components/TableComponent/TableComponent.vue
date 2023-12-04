@@ -2,6 +2,8 @@
 import { computed } from 'vue';
 import { DataCell } from './DataCell';
 
+// import { TableI} from 'vuetify/lib/components/VDataTable/index.d.mts';
+
 type TableItem = Record<string, any>;
 
 const props = defineProps({
@@ -27,16 +29,17 @@ const props = defineProps({
   },
 });
 
-function makeHeaderReadable(key: string): string {
-  return key
-    .replace(/([A-Z])/g, ' $1')
-    .replace(/^./, (str) => str.toUpperCase())
-    .replace(/Num/g, ' Номер')
-    .replace(/Time/g, ' Время');
-}
+defineSlots<{
+  [key: string]: (props: {
+    index: number
+    item: any
+    toggleSelect: (item: { value: any; selectable: boolean }) => void
+  } & { value: any }
+  ) => unknown
+}>();
 
 const computedHeaders = computed(() => props.headers.map((header) => ({
-  text: makeHeaderReadable(header.title),
+  text: header.title,
   value: header.key,
 })));
 </script>
@@ -60,6 +63,16 @@ const computedHeaders = computed(() => props.headers.map((header) => ({
         :yellow-columns="yellowColumns"
         :time-column-key="timeColumnKey"
         :estimate-time="item.estimateTime"
+      />
+    </template>
+
+    <template
+      v-for="(_, name) in $slots"
+      #[`item.${name}`]="slotData"
+    >
+      <slot
+        :name="`${name as string}`"
+        v-bind="slotData"
       />
     </template>
     <template #bottom />

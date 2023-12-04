@@ -9,6 +9,7 @@ import {
 
 import { getSubmitReexamination } from '@/api';
 import type { SubmitReexaminationItem } from '@/domain/types';
+import { BaggageCell } from '@/components/TableComponent/BagageCell';
 
 const route = useRoute();
 const { belt } = route.query;
@@ -59,7 +60,11 @@ const headers = [
     :yellow-columns="['flightNum', 'scheduleTime', 'inspection']"
     :headers="headers"
     :items="tableData"
-  />
+  >
+    <template #[`baggageNum`]="scope">
+      <BaggageCell :value="scope.value" />
+    </template>
+  </table-component>
 </template>
 
 <style module lang="scss"></style>
