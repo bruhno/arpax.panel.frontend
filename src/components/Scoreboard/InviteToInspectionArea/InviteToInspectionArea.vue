@@ -38,6 +38,7 @@ const headers = [
   { title: 'Фамилия', key: 'passenger' },
   { title: 'Рейс', key: 'flightNum' },
   { title: 'Вылет', key: 'scheduleTime' },
+  { title: 'Статус', key: 'status' },
 ];
 </script>
 

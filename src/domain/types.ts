@@ -14,6 +14,7 @@ interface InviteToInspectionAreaItem {
   destination: string
   scheduleTime: string
   estimateTime?: string
+  status: string
 }
 
 interface ReturnReexaminationItem {
