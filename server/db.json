@@ -339,140 +339,160 @@
       "flightNum":"DP-340",
       "destination":"Sochi",
       "scheduleTime":"2023-11-16T05:40:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status":"ожидайте"
     },
     {
       "passenger":"Петров Тимофей",
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status":"пройдите на контроль"
     },
     {
       "passenger":"Кузнецов Иван",
       "flightNum":"DP-340",
       "destination":"Sochi",
       "scheduleTime":"2023-11-16T05:40:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Петров Тимофей",
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Кузнецов Иван",
       "flightNum":"DP-340",
       "destination":"Sochi",
       "scheduleTime":"2023-11-16T05:40:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Петров Тимофей",
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Кузнецов Иван",
       "flightNum":"DP-340",
       "destination":"Sochi",
       "scheduleTime":"2023-11-16T05:40:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Петров Тимофей",
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "пройдите на контроль"
     },
     {
       "passenger":"Кузнецов Иван",
       "flightNum":"DP-340",
       "destination":"Sochi",
       "scheduleTime":"2023-11-16T05:40:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Петров Тимофей",
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Кузнецов Иван",
       "flightNum":"DP-340",
       "destination":"Sochi",
       "scheduleTime":"2023-11-16T05:40:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "пройдите на контроль"
     },
     {
       "passenger":"Петров Тимофей",
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "пройдите на контроль"
     },
     {
       "passenger":"Кузнецов Иван",
       "flightNum":"DP-340",
       "destination":"Sochi",
       "scheduleTime":"2023-11-16T05:40:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Петров Тимофей",
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "пройдите на контроль"
     },
     {
       "passenger":"Кузнецов Иван",
       "flightNum":"DP-340",
       "destination":"Sochi",
       "scheduleTime":"2023-11-16T05:40:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Петров Тимофей",
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Кузнецов Иван",
       "flightNum":"DP-340",
       "destination":"Sochi",
       "scheduleTime":"2023-11-16T05:40:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "пройдите на контроль"
     },
     {
       "passenger":"Петров Тимофей",
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Кузнецов Иван",
       "flightNum":"DP-340",
       "destination":"Sochi",
       "scheduleTime":"2023-11-16T05:40:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     },
     {
       "passenger":"Петров Тимофей",
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00"
+      "estimateTime":"2023-11-16T07:10:00",
+      "status": "ожидайте"
     }
   ],
   "block4": [
