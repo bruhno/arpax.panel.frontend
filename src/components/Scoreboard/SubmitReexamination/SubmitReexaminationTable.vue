@@ -9,7 +9,6 @@ import {
 
 import { getSubmitReexamination } from '@/api';
 import type { SubmitReexaminationItem } from '@/domain/types';
-import { BaggageCell } from '@/components/TableComponent/BagageCell';
 import appConfig from '@/configs/appConfig';
 
 const route = useRoute();
@@ -46,26 +45,40 @@ onUnmounted(() => {
 });
 
 const headers = [
-  { title: 'Фамилия', key: 'passenger' },
-  { title: '№ б/б', key: 'baggageNum' },
-  { title: 'Рейс', key: 'flightNum' },
-  { title: 'Вылет', key: 'scheduleTime' },
-  { title: 'Досмотр', key: 'inspection' },
+  {
+    title: 'Фамилия',
+    key: 'passenger',
+  },
+  {
+    title: '№ б/б',
+    key: 'baggageNum',
+    type: 'baggage',
+  },
+  {
+    title: 'Рейс',
+    key: 'flightNum',
+    color: 'yellow',
+  },
+  {
+    title: 'Вылет',
+    key: 'scheduleTime',
+    color: 'yellow',
+    type: 'time',
+  },
+  {
+    title: 'Досмотр',
+    key: 'inspection',
+    color: 'yellow',
+  },
 ];
 </script>
 
 <template>
   <table-component
-    time-column-key="scheduleTime"
-    header-background-color="yellowHeader"
-    :yellow-columns="['flightNum', 'scheduleTime', 'inspection']"
     :headers="headers"
     :items="tableData"
-  >
-    <template #[`baggageNum`]="scope">
-      <BaggageCell :value="scope.value" />
-    </template>
-  </table-component>
+    header-background-color="yellowHeader"
+  />
 </template>
 
 <style module lang="scss"></style>

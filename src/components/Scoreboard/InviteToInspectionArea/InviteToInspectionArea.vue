@@ -35,10 +35,24 @@ onUnmounted(() => {
   clearInterval(intervalId);
 });
 const headers = [
-  { title: 'Фамилия', key: 'passenger' },
-  { title: 'Рейс', key: 'flightNum' },
-  { title: 'Вылет', key: 'scheduleTime' },
-  { title: 'Статус', key: 'status' },
+  {
+    title: 'Фамилия',
+    key: 'passenger',
+  },
+  {
+    title: 'Рейс',
+    key: 'flightNum',
+    color: 'yellow',
+  },
+  {
+    title: 'Вылет',
+    key: 'scheduleTime',
+    color: 'yellow',
+  },
+  {
+    title: 'Статус',
+    key: 'status',
+  },
 ];
 </script>
 
@@ -51,8 +65,6 @@ const headers = [
     <table-component
       :items="tableData"
       :headers="headers"
-      :yellow-columns="['flightNum', 'scheduleTime', 'inspection']"
-      time-column-key="scheduleTime"
     />
   </div>
 </template>

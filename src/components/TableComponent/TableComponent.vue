@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import { DataCell } from './DataCell';
-
-// import { TableI} from 'vuetify/lib/components/VDataTable/index.d.mts';
+import type { RowType } from '@/components/TableComponent/Rows/types';
+import RowSelector from '@/components/TableComponent/Rows/RowSelector.vue';
 
 type TableItem = Record<string, any>;
 
-const props = defineProps({
+defineProps({
   items: {
     type: Array as () => Array<TableItem>,
     required: true,
@@ -19,29 +17,7 @@ const props = defineProps({
     type: String as () => 'redHeader' | 'yellowHeader',
     default: '',
   },
-  yellowColumns: {
-    type: Array as () => Array<string>,
-    default: () => [],
-  },
-  timeColumnKey: {
-    type: String,
-    required: true,
-  },
 });
-
-defineSlots<{
-  [key: string]: (props: {
-    index: number
-    item: any
-    toggleSelect: (item: { value: any; selectable: boolean }) => void
-  } & { value: any }
-  ) => unknown
-}>();
-
-const computedHeaders = computed(() => props.headers.map((header) => ({
-  text: header.title,
-  value: header.key,
-})));
 </script>
 
 <template>
@@ -51,30 +27,10 @@ const computedHeaders = computed(() => props.headers.map((header) => ({
     item-value="passenger"
     :class="$style[headerBackgroundColor]"
   >
-    <template
-      v-for="(header, index) in computedHeaders"
-      :key="`header-${header.value}-${index}`"
-      #[`item.${header.value}`]="{ item }"
-    >
-      <data-cell
-        :column-key="header.value"
-        :value="item[header.value]"
-        :removed="item.removed"
-        :yellow-columns="yellowColumns"
-        :time-column-key="timeColumnKey"
-        :estimate-time="item.estimateTime"
-      />
+    <template #item="row: unknown">
+      <RowSelector :row="row as RowType" />
     </template>
 
-    <template
-      v-for="(_, name) in $slots"
-      #[`item.${name}`]="slotData"
-    >
-      <slot
-        :name="`${name as string}`"
-        v-bind="slotData"
-      />
-    </template>
     <template #bottom />
   </v-data-table>
 </template>
