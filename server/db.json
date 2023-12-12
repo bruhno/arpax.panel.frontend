@@ -187,7 +187,7 @@
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00",
+      "estimateTime":"2023-11-15T07:10:00",
       "inspection":"ФТС/САБ",
       "removed":true,
       "belt": 2
@@ -307,7 +307,7 @@
       "flightNum":"SU-6402",
       "destination":"St.Petersburg",
       "scheduleTime":"2023-11-16T06:15:00",
-      "estimateTime":"2023-11-16T07:10:00",
+      "estimateTime":"2023-11-13T07:10:00",
       "inspection":"ФТС/САБ",
       "removed":true,
       "belt": 1
