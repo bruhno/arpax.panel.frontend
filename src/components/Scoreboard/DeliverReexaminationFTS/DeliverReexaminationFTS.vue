@@ -5,7 +5,6 @@ import {
   ref,
 } from 'vue';
 import { TableComponent } from '@/components/TableComponent';
-import { BaggageCell } from '@/components/TableComponent/Cells/BagageCell';
 import { PageHeader } from '@/components/PageHeader';
 
 import { getDeliverReexaminationFTS } from '@/api';
@@ -38,9 +37,20 @@ onUnmounted(() => {
 });
 
 const headers = [
-  { title: 'Фамилия', key: 'passenger' },
-  { title: 'Рейс', key: 'flightNum' },
-  { title: '№ б/б', key: 'baggageNum' },
+  {
+    title: 'Фамилия',
+    key: 'passenger',
+  },
+  {
+    title: 'Рейс',
+    key: 'flightNum',
+    color: 'yellow',
+  },
+  {
+    title: '№ б/б',
+    key: 'baggageNum',
+    type: 'baggage',
+  },
 ];
 </script>
 
@@ -53,13 +63,7 @@ const headers = [
     <table-component
       :items="tableData"
       :headers="headers"
-      :yellow-columns="['flightNum', 'scheduleTime', 'inspection']"
-      time-column-key="scheduleTime"
-    >
-      <template #[`baggageNum`]="scope">
-        <BaggageCell :value="scope.value" />
-      </template>
-    </table-component>
+    />
   </div>
 </template>
 

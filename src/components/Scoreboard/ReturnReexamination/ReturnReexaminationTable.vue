@@ -6,7 +6,6 @@ import {
 } from 'vue';
 import { useRoute } from 'vue-router';
 import TableComponent from '@/components/TableComponent/TableComponent.vue';
-import { BaggageCell } from '@/components/TableComponent/Cells/BagageCell';
 
 import { getReturnReexamination } from '@/api';
 import type { ReturnReexaminationItem } from '@/domain/types';
@@ -46,26 +45,40 @@ onUnmounted(() => {
 });
 
 const headers = [
-  { title: 'Фамилия', key: 'passenger' },
-  { title: '№ б/б', key: 'baggageNum' },
-  { title: 'Рейс', key: 'flightNum' },
-  { title: 'Вылет', key: 'scheduleTime' },
-  { title: 'Досмотр', key: 'inspection' },
+  {
+    title: 'Фамилия',
+    key: 'passenger',
+  },
+  {
+    title: '№ б/б',
+    key: 'baggageNum',
+    type: 'baggage',
+  },
+  {
+    title: 'Рейс',
+    key: 'flightNum',
+    color: 'yellow',
+  },
+  {
+    title: 'Вылет',
+    key: 'scheduleTime',
+    color: 'yellow',
+    type: 'time',
+  },
+  {
+    title: 'Досмотр',
+    key: 'inspection',
+    color: 'yellow',
+  },
 ];
 </script>
 
 <template>
   <table-component
-    time-column-key="scheduleTime"
-    header-background-color="redHeader"
-    :yellow-columns="['flightNum', 'scheduleTime', 'inspection']"
     :headers="headers"
     :items="tableData"
-  >
-    <template #[`baggageNum`]="scope">
-      <BaggageCell :value="scope.value" />
-    </template>
-  </table-component>
+    header-background-color="redHeader"
+  />
 </template>
 
 <style module lang="scss"></style>

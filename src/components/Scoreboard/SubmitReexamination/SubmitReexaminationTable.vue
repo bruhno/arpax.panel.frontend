@@ -9,7 +9,6 @@ import {
 
 import { getSubmitReexamination } from '@/api';
 import type { SubmitReexaminationItem } from '@/domain/types';
-import { BaggageCell } from '@/components/TableComponent/Cells/BagageCell';
 import appConfig from '@/configs/appConfig';
 
 const route = useRoute();
@@ -76,16 +75,10 @@ const headers = [
 
 <template>
   <table-component
-    time-column-key="scheduleTime"
-    header-background-color="yellowHeader"
-    :yellow-columns="['flightNum', 'scheduleTime', 'inspection']"
     :headers="headers"
     :items="tableData"
-  >
-    <template #[`baggageNum`]="scope">
-      <BaggageCell :value="scope.value" />
-    </template>
-  </table-component>
+    header-background-color="yellowHeader"
+  />
 </template>
 
 <style module lang="scss"></style>
