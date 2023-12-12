@@ -6,7 +6,7 @@ import {
 } from 'vue';
 import { useRoute } from 'vue-router';
 import TableComponent from '@/components/TableComponent/TableComponent.vue';
-import { BaggageCell } from '@/components/TableComponent/BagageCell';
+import { BaggageCell } from '@/components/TableComponent/Cells/BagageCell';
 
 import { getReturnReexamination } from '@/api';
 import type { ReturnReexaminationItem } from '@/domain/types';

@@ -9,7 +9,7 @@ import {
 
 import { getSubmitReexamination } from '@/api';
 import type { SubmitReexaminationItem } from '@/domain/types';
-import { BaggageCell } from '@/components/TableComponent/BagageCell';
+import { BaggageCell } from '@/components/TableComponent/Cells/BagageCell';
 import appConfig from '@/configs/appConfig';
 
 const route = useRoute();
@@ -46,11 +46,31 @@ onUnmounted(() => {
 });
 
 const headers = [
-  { title: 'Фамилия', key: 'passenger' },
-  { title: '№ б/б', key: 'baggageNum' },
-  { title: 'Рейс', key: 'flightNum' },
-  { title: 'Вылет', key: 'scheduleTime' },
-  { title: 'Досмотр', key: 'inspection' },
+  {
+    title: 'Фамилия',
+    key: 'passenger',
+  },
+  {
+    title: '№ б/б',
+    key: 'baggageNum',
+    type: 'baggage',
+  },
+  {
+    title: 'Рейс',
+    key: 'flightNum',
+    color: 'yellow',
+  },
+  {
+    title: 'Вылет',
+    key: 'scheduleTime',
+    color: 'yellow',
+    type: 'time',
+  },
+  {
+    title: 'Досмотр',
+    key: 'inspection',
+    color: 'yellow',
+  },
 ];
 </script>
 

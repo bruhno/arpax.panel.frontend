@@ -5,7 +5,7 @@ import {
   ref,
 } from 'vue';
 import { TableComponent } from '@/components/TableComponent';
-import { BaggageCell } from '@/components/TableComponent/BagageCell';
+import { BaggageCell } from '@/components/TableComponent/Cells/BagageCell';
 import { PageHeader } from '@/components/PageHeader';
 
 import { getDeliverReexaminationFTS } from '@/api';
@@ -39,17 +39,15 @@ onUnmounted(() => {
 
 const headers = [
   { title: 'Фамилия', key: 'passenger' },
-  { title: '№ б/б', key: 'baggageNum' },
   { title: 'Рейс', key: 'flightNum' },
-  { title: 'Вылет', key: 'scheduleTime' },
-  { title: 'Досмотр', key: 'inspection' },
+  { title: '№ б/б', key: 'baggageNum' },
 ];
 </script>
 
 <template>
   <div class="greetings">
     <PageHeader
-      title="Доставить на повторный досмотр ФТС"
+      title="Багаж к досмотру"
       with-clock
     />
     <table-component
