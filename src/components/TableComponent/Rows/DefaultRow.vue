@@ -11,7 +11,7 @@ defineProps<{
 </script>
 
 <template>
-  <tr :class="className">
+  <tr :class="[className, $style.row]">
     <template
       v-for="column in row.columns"
       :key="column.key"
@@ -38,4 +38,10 @@ defineProps<{
   </tr>
 </template>
 
-<style module lang="scss"></style>
+<style module lang="scss">
+@import '@/assets/styles/styleKit';
+
+.row {
+  @include text($size: 18px);
+}
+</style>

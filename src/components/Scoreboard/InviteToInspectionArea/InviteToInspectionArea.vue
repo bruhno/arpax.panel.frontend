@@ -48,6 +48,7 @@ const headers = [
     title: 'Вылет',
     key: 'scheduleTime',
     color: 'yellow',
+    type: 'time',
   },
   {
     title: 'Статус',

@@ -4,6 +4,7 @@ import DefaultCell from '@/components/TableComponent/Cells/DefaultCell/DefaultCe
 
 import type { ColumnColors } from '@/components/TableComponent/Rows/types';
 import useIsExpired from '@/composables/useIsExpired';
+import { format, parseISO } from 'date-fns';
 
 const props = defineProps<{
   value: string
@@ -16,11 +17,13 @@ const { value, expiredDate, color } = toRefs(props);
 const isExpired = useIsExpired(value.value, expiredDate.value);
 
 const currentColor = computed(() => (isExpired.value ? 'red' : color?.value));
+
+const time = computed(() => format(parseISO(props.value), 'HH:mm'));
 </script>
 
 <template>
   <DefaultCell
     :color="currentColor"
-    :value="value"
+    :value="time"
   />
 </template>
